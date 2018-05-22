@@ -15,7 +15,7 @@ class ImagesController extends Controller
 
     public function show(Image $image)
     {
-        return \Image::make(Storage::get($image->file))->response();
+        return response()->file(Storage::path($image->file));
     }
 
     public function delete(Request $request, Image $image)
