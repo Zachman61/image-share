@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "584e89f7e066304a8b964656962359fc",
+    "content-hash": "4f39e472bb3024781806077de50d0bb4",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -3208,6 +3208,56 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "z61/laravel-deploy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:Zachman61/LaravelDeploy.git",
+                "reference": "95d62bdea3f49591b79a97bf5e9f28efb53f69fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Zachman61/LaravelDeploy/zipball/95d62bdea3f49591b79a97bf5e9f28efb53f69fb",
+                "reference": "95d62bdea3f49591b79a97bf5e9f28efb53f69fb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/routing": "5.5.x|5.6.x|5.7.x",
+                "illuminate/support": "5.5.x|5.6.x|5.7.x"
+            },
+            "require-dev": {
+                "laravel/framework": "5.5.x"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Z61\\LaravelDeploy\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Z61\\LaravelDeploy\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Z61",
+                    "email": "z61@zeesixtyone.com"
+                }
+            ],
+            "description": "Easy deployment using GitHub webhooks.",
+            "support": {
+                "source": "https://github.com/Zachman61/LaravelDeploy/tree/master",
+                "issues": "https://github.com/Zachman61/LaravelDeploy/issues"
+            },
+            "time": "2019-02-02T06:21:49+00:00"
+        },
+        {
             "name": "zendframework/zend-diactoros",
             "version": "1.7.0",
             "source": {
@@ -4988,7 +5038,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "z61/laravel-deploy": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
