@@ -61,7 +61,7 @@
     "repositories": {
         "laravel-deploy": {
             "type": "vcs",
-            "url": "https://github.com/Zachman61/LaravelDeploy.git"
+            "url": "git@github.com:Zachman61/LaravelDeploy.git"
         }
     }
 }
