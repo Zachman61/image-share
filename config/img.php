@@ -10,7 +10,7 @@ return array(
             'Authorization' => 'Bearer YOURTOKENHERE',
         ],
         'RegexList' => ["\\\"filename\\\":\\\"(.+?)\\\""],
-        'URL' => url(''). '$regex:1,1$',
+        //'URL' => url(''). '$regex:1,1$',
         'DeletionURL' => url('/d/'). '$regex:1,1$'
     ],
 );
