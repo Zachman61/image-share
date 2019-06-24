@@ -41,7 +41,7 @@ Route::get('/d/{image}', 'ImagesController@delete')->name('images.delete');
 
 
 Route::get('/sharex', function() {
-    $config = config('img.sharex_config');
+    $config = \App\ShareXConfig::getShareXConfig();
     return view('sharex')->with('config', $config);
 
 })->name('json');
