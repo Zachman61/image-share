@@ -28,6 +28,12 @@ if (env('REGISTER_ENABLED', false))
     Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
     Route::post('register', 'Auth\RegisterController@register');
 }
+else
+{
+    Route::get('register', function() {
+        return view('registration_disabled');
+    })->name('register');
+}
 
 Route::get('/home', 'HomeController@index')->name('home');
 
