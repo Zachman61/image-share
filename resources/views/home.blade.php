@@ -15,7 +15,7 @@
                     @endif
 
                     <p>Welcome back, <strong>{{ Auth::user()->username }}</strong>. Your last visit was
-                        <time class="timeago" datetime="{{Auth::user()->updated_at}}">{{ Auth::user()->updated_at }}</time>.</p>
+                        <time class="timeago" datetime="{{Auth::user()->signed_in_at}}">{{ Auth::user()->signed_in_at }}</time>.</p>
                     <p>You have posted <strong>{{ $imageCount }}</strong> images.</p>
                     <p>You have uploaded
                         <strong><a href="{{ url('images') }}">{{ $newImageCount }}</a></strong>
