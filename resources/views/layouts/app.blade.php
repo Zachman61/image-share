@@ -23,6 +23,9 @@
             display:block;
             margin:0px auto;
         }
+        .pt-1 {
+            padding-top:1rem;
+        }
     </style>
 </head>
 <body>
